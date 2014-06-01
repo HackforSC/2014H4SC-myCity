@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E9" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignupTableViewController">
+            <connections>
+                <outlet property="confirmPasswordTextField" destination="TyI-7C-HCD" id="7s9-Xc-hg3"/>
+                <outlet property="emailAddressTextField" destination="Qh9-Qy-ztP" id="jWZ-cX-7MF"/>
+                <outlet property="firstNameTextField" destination="s8p-Jw-zuf" id="hkx-iG-kuy"/>
+                <outlet property="lastNameTextField" destination="5H1-fi-w1z" id="3va-r4-kJW"/>
+                <outlet property="passwordTextField" destination="RhO-Kb-7J3" id="nap-tP-hbd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" bouncesZoom="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outlet property="dataSource" destination="-1" id="Tng-2m-Rnh"/>
+                <outlet property="delegate" destination="-1" id="9aC-8N-iBw"/>
+            </connections>
+        </tableView>
+        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" id="RhO-Kb-7J3">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+            <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardAppearance="light" returnKeyType="next" secureTextEntry="YES"/>
+            <connections>
+                <action selector="nextField:" destination="-1" eventType="editingDidEndOnExit" id="P87-st-QIT"/>
+            </connections>
+        </textField>
+        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" minimumFontSize="17" id="s8p-Jw-zuf">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+            <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardAppearance="light" returnKeyType="next"/>
+            <connections>
+                <action selector="nextField:" destination="-1" eventType="editingDidEndOnExit" id="WTw-uG-eic"/>
+            </connections>
+        </textField>
+        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" minimumFontSize="17" id="5H1-fi-w1z">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+            <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardAppearance="light" returnKeyType="next"/>
+            <connections>
+                <action selector="nextField:" destination="-1" eventType="editingDidEndOnExit" id="5jY-JF-qtQ"/>
+            </connections>
+        </textField>
+        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Password" minimumFontSize="17" id="TyI-7C-HCD">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+            <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardAppearance="light" returnKeyType="go" secureTextEntry="YES"/>
+            <connections>
+                <action selector="nextField:" destination="-1" eventType="editingDidEndOnExit" id="JtX-FS-7YB"/>
+            </connections>
+        </textField>
+        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" minimumFontSize="17" id="Qh9-Qy-ztP">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+            <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" keyboardAppearance="light" returnKeyType="next"/>
+            <connections>
+                <action selector="nextField:" destination="-1" eventType="editingDidEndOnExit" id="SdV-CZ-MyZ"/>
+            </connections>
+        </textField>
+    </objects>
+</document>
