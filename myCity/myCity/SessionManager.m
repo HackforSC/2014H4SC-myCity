@@ -415,6 +415,9 @@ static SessionManager *sharedManager;
 {
     _currentUser = nil;
     _currentData = nil;
+    
+    [USER_DEFAULTS removeObjectForKey:@"session"];
+    [USER_DEFAULTS synchronize];
 }
 
 //Keychain doesn't unlock until after first user unlock after reboot. This is problematic for location services (and bluetooth) that boot before that. Credentials can be lost, or a session cannot begin, until the user unlocks the device possibly hours later. Encrypting it and storing it myself lets me begin services immediately after reboot. Although its in user defaults, its IS encrypted.

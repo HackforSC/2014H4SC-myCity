@@ -38,27 +38,30 @@
             <div class="collapse navbar-collapse" id="rebound-navbar-collapse">
               <ul class="nav navbar-nav">
                 <li class="title">Menu</li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">Request Project</a></li>
-                <li><a href="hire.html">About myCity</a></li>
-                <li><a href="blog-parent.html">Contact Us</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/w/request">Request Project</a></li>
+                <li><a href="/w/about">About myCity</a></li>
+                <li><a href="/w/contact">Contact Us</a></li>
               </ul>
-              <ul class="nav navbar-nav filter-portfolio">
+              <ul class="nav navbar-nav">
                 <li class="title">Total Projects</li>
                 <li><span class="important-stuff"><?= $values['project_count'] ?></span></li>
               </ul>
-              <ul class="nav navbar-nav filter-portfolio">
+              <ul class="nav navbar-nav">
                 <li class="title">Total Raised</li>
                 <li><span class="important-stuff">$<?= number_format($values['donations_total']) ?></span></li>
               </ul>
-              <ul class="nav navbar-nav filter-portfolio">
+              <ul class="nav navbar-nav">
                 <li class="title">Cities</li>
-                <li><a href="#none">Columbia, SC</a> <span>(123)</span></li>
+                <li><a href="/">Columbia, SC</a></li>
               </ul>
               <ul class="nav navbar-nav nav-social hidden-sm hidden-xs">
                 <li class="title">Social</li>
-                <li><a href="#none">Twitter</a></li>
-                <li><a href="#none">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+              </ul>
+              <ul class="nav navbar-nav nav-social hidden-sm hidden-xs">
+                <li><img class="img img-responsive appstorelogo" src="/static/img/appstore.png" alt="Available on App Store."></li>
               </ul>
             </div><!-- end navbar-collapse -->
           </div><!-- end navbar -->
@@ -72,7 +75,7 @@
     </div><!-- end wrapper -->
     
     <footer class="hidden-xs">
-      <p class="pull-left">Made in Columbia, with some slight love.</p>
+      <p class="pull-left">Made in Columbia. In very little time.</p>
     </footer>
     
     <!-- Le javascript
